@@ -1,0 +1,21 @@
+body{
+	background-image: url(../images/caves.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+li {
+	list-style: none;
+}
+.gemPics{
+	display: flex;
+	justify-content: center;
+}
+.jumbotron{
+	background-color:rgba(0,0,0,0.5);
+}
+.center-text{
+	margin-left: 15em;
+	margin-right: 15em;
+}
