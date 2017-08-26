@@ -1,4 +1,4 @@
-
+ 
 // function to tell the script to wait until DOM is loaded before running this code
 $(document).ready(function(){
 //Global Varible 
@@ -7,6 +7,7 @@ var win = 0;
 var randomNum = Math.floor(Math.random() * (102)+ 19);
 var gemArray = [];
 var total = 0;
+startgame();
 	// generating a random value for the gems
 
 	function gemFunc() {
@@ -72,6 +73,8 @@ outputScore(".gem4", 3);
 			restart();
 
 		}
+		}
+
 		// function resets all variables and creates a new random word
 		function restart() {
 			
@@ -88,9 +91,15 @@ outputScore(".gem4", 3);
 			$(".score").html(total);
 			
 			$("#winlossmessage").html("");
-			
 		}
-	}
+
+			
+		function startgame() {
+			$("#wins").html(win);
+			$("#losses").html(loss);
+			$(".score").html(total);
+		}
+			
 
 
 
